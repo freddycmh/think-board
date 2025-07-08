@@ -5,6 +5,8 @@ import { useState } from "react";
 
 const HomePage = () => {
   const [isRateLimited, setIsRateLimited] = useState(false);
+  const [notes, setNotes] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   return (
     <div className="min-h-screen">
